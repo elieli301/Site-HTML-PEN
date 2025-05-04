@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inteligența Artificială & Machine learning</title>
+  <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+  
+  <<audio id="bg-music" autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+  
+  <script>
+    const audio = document.getElementById("bg-music");
+    function enableSound() {
+      audio.muted = false;
+      audio.volume = 0.2;
+      audio.play();
+      document.removeEventListener("click", enableSound);
+      document.removeEventListener("scroll", enableSound);
+    }
+  
+    document.addEventListener("click", enableSound);
+    document.addEventListener("scroll", enableSound);
+  </script>
+
+  <div class="sidebar">
+    <div class="logo">
+      <a href="https://chatgpt.com/?temporary-chat=true" target="_blank">
+        <img src="jarvis1.gif" alt="AI">
+      </a>
+    </div>
+    <audio autoplay loop>
+        <source src="music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    <ul class="menu">
+      <li><a href="\liceu\proiecte\atestat info\Plopan Eliana\acasa\info.html">Acasă</a></li>
+      <li><a href="\liceu\proiecte\atestat info\Plopan Eliana\despre\despre.html">Despre</a></li>
+      <li><a href="\liceu\proiecte\atestat info\Plopan Eliana\folosinta\folosinta.html">Utilizare</a></li>
+      <li><a href="\liceu\proiecte\atestat info\Plopan Eliana\riscuri\riscuri.html">Riscuri</a></li>
+      <li class="active"><a href="\liceu\proiecte\atestat info\Plopan Eliana\curiozitati\curiozitati.html">Curiozități</a></li>
+    </ul>
+  </div>
+
+  <div class="content-box">
+    <h1>Inteligența artificială & machine learning</h1>
+
+    <h2>5.1 Curiozități & Jocuri</h2>
+    <div  class="curiozitati-text">
+      <ol>
+        <li><strong>AI-ul poate bate campioni la jocuri complexe:</strong> AlphaGo, dezvoltat de DeepMind, a învins campionul mondial la Go în 2016 — un joc mai complex decât șahul.</li>
+        <li><strong>AI-ul recunoaște pisici fără instrucțiuni explicite:</strong> Un algoritm Google a învățat singur ce este o pisică analizând milioane de videoclipuri de pe YouTube.</li>
+        <li><strong>AI-ul compune poezii și muzică:</strong> Modele ca ChatGPT pot crea poezii, cântece sau scenarii — unele chiar au fost publicate.</li>
+        <li><strong>AI-ul joacă jocuri video mai bine decât oamenii:</strong> Poate învăța jocuri ca Atari sau StarCraft II prin „trial and error”.</li>
+        <li><strong>Termenul "machine learning" e din anii ’50:</strong> A fost introdus de Arthur Samuel în 1959, creatorul unui AI care juca dame.</li>
+        <li><strong>Recomandările de pe Netflix sau Amazon? AI!</strong> Algoritmii de machine learning îți învață preferințele și personalizează conținutul.</li>
+        <li><strong>AI-ul ajută la descoperirea de medicamente:</strong> În pandemie, a accelerat identificarea tratamentelor analizând structuri virale.</li>
+        <li><strong>AI-ul poate crea artă digitală:</strong> Lucrări generate de AI (ex. GAN) au fost expuse și vândute cu mii de dolari.</li>
+        <li><strong>Curse cu mașini conduse doar de AI:</strong> Competițiile „RoboRace” implică vehicule autonome fără șoferi umani.</li>
+        <li><strong>AI-ul scrie știri și rapoarte:</strong> Reuters și Bloomberg folosesc AI pentru generarea automată de articole financiare.</li>
+      </ol>
+    </div>
+    <p>Aceste videoclipuri demonstrează cum AI învață jocuri:</p>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/qv6UVOQ0F44?start=12" title="AI Go Game" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p>Un alt exemplu:</p>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Lu56xVlZ40M" title="AI Pac-Man" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <li>
+      Dacă vrei să vezi un documentar prezentat de Robert Downey Jr., apasă 
+      <a href="https://www.youtube.com/playlist?list=PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc" style="color: inherit; text-decoration: none;"><em>AICI</em></a>.
+  </li>
+
+    <h2>5.2 Test AI & Machine Learning</h2>
+    <form id="quizForm">
+      <div class="question">
+        <h3>1. Cine a inventat termenul "machine learning"?</h3>
+        <label><input type="radio" name="q1" value="a"> a) Alan Turing</label>
+        <label><input type="radio" name="q1" value="b"> b) Arthur Samuel</label>
+        <label><input type="radio" name="q1" value="c"> c) Elon Musk</label>
+        <label><input type="radio" name="q1" value="d"> d) Geoffrey Hinton</label>
+      </div>
+      <div class="question">
+        <h3>2. Ce înseamnă „învățare supravegheată”?</h3>
+        <label><input type="radio" name="q2" value="a"> a) AI învață singur fără date de antrenament</label>
+        <label><input type="radio" name="q2" value="b"> b) AI este ghidat de un om în timp real</label>
+        <label><input type="radio" name="q2" value="c"> c) AI învață din date etichetate</label>
+        <label><input type="radio" name="q2" value="d"> d) AI este conectat la un supercomputer</label>
+      </div>
+    
+      <div class="question">
+        <h3>3. Care este un exemplu de AI generativ?</h3>
+        <label><input type="radio" name="q3" value="a"> a) Google Maps</label>
+        <label><input type="radio" name="q3" value="b"> b) AlphaGo</label>
+        <label><input type="radio" name="q3" value="c"> c) ChatGPT</label>
+        <label><input type="radio" name="q3" value="d"> d) Excel</label>
+      </div>
+    
+      <div class="question">
+        <h3>4. Ce este o rețea neuronală artificială?</h3>
+        <label><input type="radio" name="q4" value="a"> a) Un robot care imită creierul uman</label>
+        <label><input type="radio" name="q4" value="b"> b) Un algoritm inspirat de conexiunile neuronale din creier</label>
+        <label><input type="radio" name="q4" value="c"> c) Un virus informatic</label>
+        <label><input type="radio" name="q4" value="d"> d) O rețea socială</label>
+      </div>
+    
+      <div class="question">
+        <h3>5. Care AI a câștigat un meci de Go?</h3>
+        <label><input type="radio" name="q5" value="a"> a) Siri</label>
+        <label><input type="radio" name="q5" value="b"> b) AlphaZero</label>
+        <label><input type="radio" name="q5" value="c"> c) Watson</label>
+        <label><input type="radio" name="q5" value="d"> d) AlphaGo</label>
+      </div>
+    
+      <div class="question">
+        <h3>6. Ce tip de AI generează imagini din text?</h3>
+        <label><input type="radio" name="q6" value="a"> a) GAN</label>
+        <label><input type="radio" name="q6" value="b"> b) CNN</label>
+        <label><input type="radio" name="q6" value="c"> c) RNN</label>
+        <label><input type="radio" name="q6" value="d"> d) SVM</label>
+      </div>
+    
+      <div class="question">
+        <h3>7. Ce sarcină nu e potrivită pentru AI azi?</h3>
+        <label><input type="radio" name="q7" value="a"> a) Recunoașterea facială</label>
+        <label><input type="radio" name="q7" value="b"> b) Scrierea de cod simplu</label>
+        <label><input type="radio" name="q7" value="c"> c) Generarea de visuri reale</label>
+        <label><input type="radio" name="q7" value="d"> d) Traducerea textelor</label>
+      </div>
+    
+      <div class="question">
+        <h3>8. Ce e „overfitting”-ul?</h3>
+        <label><input type="radio" name="q8" value="a"> a) Când modelul nu învață deloc</label>
+        <label><input type="radio" name="q8" value="b"> b) Când modelul învață prea bine pe datele de antrenament</label>
+        <label><input type="radio" name="q8" value="c"> c) Când modelul devine conștient</label>
+        <label><input type="radio" name="q8" value="d"> d) Când AI-ul se blochează</label>
+      </div>
+    
+      <div class="question">
+        <h3>9. Ce companie a creat GPT?</h3>
+        <label><input type="radio" name="q9" value="a"> a) Microsoft</label>
+        <label><input type="radio" name="q9" value="b"> b) OpenAI</label>
+        <label><input type="radio" name="q9" value="c"> c) Google</label>
+        <label><input type="radio" name="q9" value="d"> d) Amazon</label>
+      </div> 
+
+      <div class="question">
+        <h3>10. Ce înseamnă NLP?</h3>
+        <label><input type="radio" name="q10" value="a"> a) Neuro-Limbic Programming</label>
+        <label><input type="radio" name="q10" value="b"> b) Natural Language Processing</label>
+        <label><input type="radio" name="q10" value="c"> c) Neural Learning Protocol</label>
+        <label><input type="radio" name="q10" value="d"> d) Numeric Logic Processor</label>
+      </div>
+
+      <button type="button" class="submit-btn" onclick="checkAnswers()">Trimite răspunsurile</button>
+      <div class="result" id="result"></div>
+    </form>
+    <a href="\liceu\proiecte\atestat info\Plopan Eliana.zip" download>
+      <button type="button" class="submit-btn">Descarcă site-ul</button>
+    </a>
+  </div>
+
+  <script>
+    function checkAnswers() {
+      const correctAnswers = {
+        q1: "b", q2: "c", q3: "c", q4: "b", q5: "d",
+        q6: "a", q7: "c", q8: "b", q9: "b", q10: "b"
+      };
+
+      let score = 0;
+      let total = Object.keys(correctAnswers).length;
+
+      for (let q in correctAnswers) {
+        const answer = document.querySelector(`input[name="${q}"]:checked`);
+        if (answer && answer.value === correctAnswers[q]) {
+          score++;
+        }
+      }
+
+      const result = document.getElementById("result");
+      result.textContent = `Ai obținut ${score} din ${total} puncte!`;
+    }
+  </script>
+</body>
+</html>

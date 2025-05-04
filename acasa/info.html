@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteligența artificială & machine learning</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <<audio id="bg-music" autoplay loop>
+        <source src="music.mp3" type="audio/mpeg">
+      </audio>
+      
+      <script>
+        const audio = document.getElementById("bg-music");
+        function enableSound() {
+          audio.muted = false;
+          audio.volume = 0.2;
+          audio.play();
+          document.removeEventListener("click", enableSound);
+          document.removeEventListener("scroll", enableSound);
+        }
+      
+        document.addEventListener("click", enableSound);
+        document.addEventListener("scroll", enableSound);
+      </script>
+
+    <div class="sidebar">
+        <div class="logo">
+            <a href="https://chatgpt.com/?temporary-chat=true" target="_blank">
+                <img src="jarvis1.gif" alt="AI">
+              </a>
+              <audio autoplay loop>
+                <source src="music.mp3" type="audio/mp3">
+              </audio>
+        </div>
+        <ul class="menu">
+            <li class="active"><a href="\liceu\proiecte\atestat info\Plopan Eliana\acasa\info.html">Acasă</a></li>
+            <li><a href="\liceu\proiecte\atestat info\Plopan Eliana\despre\despre.html">Despre</a></li>
+            <li><a href="\liceu\proiecte\atestat info\Plopan Eliana\folosinta\folosinta.html">Utilizare</a></li>
+            <li><a href="\liceu\proiecte\atestat info\Plopan Eliana\riscuri\riscuri.html">Riscuri</a></li>
+            <li><a href="\liceu\proiecte\atestat info\Plopan Eliana\curiozitati\curiozitati.html">Curiozități</a></li>
+        </ul>
+    </div>
+
+    <div class="content-box">
+        <h1>Inteligența artificială & machine learning</h1>
+
+        <h2>1.1 Ce este inteligența artificială (IA)?</h2>
+        <p>Inteligența artificială (IA) este un domeniu al informaticii care se ocupă cu dezvoltarea de sisteme sau programe capabile să efectueze sarcini care, în mod normal, necesită inteligență umană. Aceste sarcini pot include:</p>
+        <ul>
+            <li>Recunoaștere vocală (ex: Siri, Alexa);</li>
+            <li>Vedere computerizată (ex: recunoașterea fețelor în poze);</li>
+            <li>Luarea deciziilor (ex: sisteme de recomandare, cum ar fi Netflix sau Amazon);</li>
+            <li>Procesarea limbajului natural (ex: chatboți, traduceri automate);</li>
+            <li>Învățare automată (sisteme care învață din date, fără a fi programate explicit).</li>
+        </ul>
+        <p>Practic, IA încearcă să imite sau să reproducă moduri de gândire, percepție sau învățare specifice oamenilor, folosind algoritmi, rețele neuronale artificiale, modele statistice și baze de date masive.</p>
+        <p>Pentru a înțelege și mai bine inteligența artificială, mai jos avem o poza care ne explică ramurile IA.</p>
+        
+        <div class="image-middle">
+            <img src="airamurabg.jpg" alt="Imagine AI">
+        </div>
+        
+        <h2>1.2 Ce este machine learning (ML)?</h2>
+        <p>Machine learning, sau învățarea automată, este o subcategorie a inteligenței artificiale care se axează pe dezvoltarea de algoritmi capabili să „învețe” din date. În loc ca un programator să scrie reguli explicite pentru fiecare posibilă situație, sistemul este antrenat prin exemple și devine capabil să recunoască modele sau să anticipeze rezultate pe cont propriu.</p>
+        <p>De exemplu, un program de ML poate fi antrenat cu mii de imagini cu pisici pentru a recunoaște o pisică într-o fotografie nouă, fără ca cineva să-i fi oferit o definiție formală a unei pisici. Prin acest proces, sistemul dezvoltă propriile reguli și criterii statistice, în funcție de ce a „văzut” în datele de instruire.</p>
+        <p>Machine learning este utilizat pe scară largă în numeroase domenii: de la filtrarea spamului în e-mailuri, la detectarea fraudelor bancare, prognoze meteo, asistență medicală și chiar în automobilele autonome.</p>
+
+        <h2>1.3 Tipuri de inteligență artificială</h2>
+        <p>Inteligența artificială poate fi clasificată, în funcție de complexitate și autonomie, în trei tipuri principale:</p>
+        <ul>
+            <li><strong>IA slabă (sau narrow AI)</strong> – Programe specializate pentru o singură sarcină, cum sunt Siri, Alexa sau sistemele de recomandare.</li>
+            <li><strong>IA generală (AGI – Artificial General Intelligence)</strong> – Un sistem teoretic capabil să învețe și să aplice cunoștințe în orice domeniu, asemenea unui om.</li>
+            <li><strong>IA superioară (Superintelligence)</strong> – O formă ipotetică de inteligență care ar depăși capacitățile umane în toate domeniile. Apare frecvent în science fiction, precum în filmul <em>Ex Machina</em>.</li>
+        </ul>
+        
+        <div class="text-image-container">
+                    <div class="text-side">
+        <h2>1.4 Istoricul IA</h2>
+        <ul>
+            <li><strong>1950</strong> – Alan Turing propune întrebarea „Pot mașinile să gândească?” și introduce Testul Turing.</li>
+            <li><strong>1956</strong> – La Conferința de la Dartmouth, John McCarthy folosește pentru prima dată termenul „inteligență artificială”.</li>
+            <li><strong>1960-1970</strong> – Primele programe de rezolvare a problemelor (ex: Logic Theorist, General Problem Solver).</li>
+            <li><strong>1980</strong> – Apariția sistemelor expert (ex: XCON) și popularizarea IA în industrie.</li>
+            <li><strong>1997</strong> – IBM Deep Blue îl învinge pe Garry Kasparov la șah.</li>
+            <li><strong>2011</strong> – IBM Watson câștigă concursul <em>Jeopardy!</em> împotriva campionilor umani.</li>
+            <li><strong>2012</strong> – Rețelele neuronale adânci (deep learning) revoluționează recunoașterea imaginii și limbajului.</li>
+            <li><strong>2016</strong> – AlphaGo învinge campionul mondial la Go.</li>
+            <li><strong>2020-prezent</strong> – Modele avansate ca GPT (inclusiv ChatGPT) și DALL-E schimbă felul în care IA generează text, imagini și cod.</li>
+        </ul>
+            </div>
+            <div class="image-side">
+              <img src="robo.jpg" alt="Imagine AI" />
+            </div>
+          </div>
+          <a href="\liceu\proiecte\atestat info\Plopan Eliana.zip" download>
+            <button type="button" class="submit-btn">Descarcă site-ul</button>
+          </a>
+
+    </div>
+
+</body>
+</html>
